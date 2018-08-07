@@ -1,28 +1,139 @@
-.App {
-  text-align: center;
+.grid {
+  position: relative;
+}
+.grid:before {
+  background-color: #F0F0F0;
+  box-shadow: 0px 0px 0px 1px #DDDDDD inset;
+  content: '';
+  height: calc(100% - 2rem);
+  left: 1rem;
+  top: 1rem;
+  position: absolute;
+  width: calc(100% - 2rem);
+ }
+.ui.divided.grid:before, .celled.grid:before {
+  display: none;
+}
+.ui.aligned .column:after {
+  display: none !important;
+}
+.grid .column:not(.row):not(.grid):after {
+  background-color: rgba(86, 61, 124, .15);
+  box-shadow: 0px 0px 0px 1px rgba(86, 61, 124, 0.2) inset;
+  content: '';
+  display: block;
+  min-height: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .stackable.grid:before {
+    width: 100%;
+    left: 0em;
+  }
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+@function random-color() {
+  $value: "black";
+  @if random(5) == 1 {
+   $value: "#DAF7A6";
+  }
+  @else if random(5) == 2{
+    $value: "#FFC300";
+  }
+  @else if random(5) == 3{
+    $value: "#FF5733";
+  }
+  @else if random(5) == 4{
+    $value: "#82E0AA";
+  }
+  @else {
+    $value: "#85C1E9";
+  }
+  @return unquote($value);
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+// n is number of stars required
+@function multiple-box-shadow($n) {
+  $value: "#{random(2000)}px #{random(2000)}px #{random-color()}";
+
+  @for $i from 2 through $n {
+    $value: "#{$value} , #{random(2000)}px #{random(2000)}px #{random-color()}";
+  }
+
+  @return unquote($value);
 }
 
-.App-title {
-  font-size: 1.5em;
-}
+$shadows-small: multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big: multiple-box-shadow(100);
 
-.App-intro {
-  font-size: large;
-}
+.parallax {
+  #stars1 {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-small;
+    animation: animStar 150s linear infinite;
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 2000px;
+      width: 2px;
+      height: 2px;
+      border-radius: 50%;
+      background: transparent;
+      box-shadow: $shadows-small;
+    }
+  }
+
+  #stars2 {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-medium;
+    animation: animStar 100s linear infinite;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 2000px;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: transparent;
+      box-shadow: $shadows-medium;
+    }
+  }
+
+  #stars3 {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-big;
+    animation: animStar 50s linear infinite;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 2000px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: transparent;
+      box-shadow: $shadows-big;
+    }
+  }
+
+  @keyframes animStar {
+    from {
+      transform: translateY(-2000px);
+    }
+
+    to {
+      transform: translateY(0px);
+    }
+  }
 }
