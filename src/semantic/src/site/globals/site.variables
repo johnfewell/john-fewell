@@ -1,0 +1,7 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+@headerFont        : 'Lora', 'Helvetica Neue', Arial, Helvetica, serif;
+@pageFont          : 'Oswald', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@googleFontFamily  : 'Lora:400italic,400|Oswald:400,700';

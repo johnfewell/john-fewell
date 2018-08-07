@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import 'semantic-ui-css/semantic.min.css';
+import './semantic/dist/semantic.min.css';
 
 import React, { Component } from 'react'
 import {
