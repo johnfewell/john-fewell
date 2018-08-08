@@ -69,7 +69,6 @@ class DesktopContainer extends Component {
             <HomepageHeading />
           </Segment>
         </Visibility>
-
         {children}
       </Responsive>
     )
