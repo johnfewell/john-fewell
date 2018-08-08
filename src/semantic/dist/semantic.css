@@ -10,7 +10,7 @@
  */
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic&subset=latin');
 @import url(https://fonts.googleapis.com/css?family=Roboto);
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Lora);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
@@ -6394,7 +6394,7 @@ i.flag.zimbabwe:before {
   border: none;
   margin: calc(2rem -  0.165em ) 0em 1rem;
   padding: 0em 0em;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Lora', Arial, sans-serif;
   font-weight: normal;
   line-height: 1.33em;
   text-transform: none;
