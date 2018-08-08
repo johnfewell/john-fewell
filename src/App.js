@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom';
+import ContactForm from './ContactForm'
 import './semantic/dist/semantic.min.css';
 import HomepageHeading from './HomepageHeading';
 import DesktopContainer from './DesktopContainer';
@@ -70,7 +71,7 @@ const HomepageLayout = () => (
                   fluid
                   label={{ as: 'a', color: 'white', content: 'CE Evaluations', icon: 'react', size: 'huge', ribbon: true }}
                   src='' />
-                <Card.Content>
+                <Card.Content as='a'  href={'https://github.com/johnfewell/ce-evals-app'}>
                   <Header as='h2' style={{ marginTop: '80px', color: 'white' }}>
                     This app allows the creation and management of continuing education evaluations and certificates.
                   </Header>
@@ -88,9 +89,10 @@ const HomepageLayout = () => (
               <Card style={{ height: '410px', background: '#B2CDDE'  }}className="ui raised link card">
                 <Image
                   fluid
-                  label={{ as: 'a', color: 'white', content: 'JavaScript', icon: 'js', size: 'huge', ribbon: true }}
+                  label={{ as: 'a', color: 'white', content: 'School Registration', icon: 'js', size: 'huge', ribbon: true }}
                   src='' />
-                <Card.Content>
+                <Card.Content as='a' href={'https://github.com/johnfewell/sinatra-portfolio-school-registration'}
+                  >
                   <Header as='h2' style={{ marginTop: '80px', color: 'white' }}>
                     This app allows the tracking of classes, students, and instructors.
                   </Header>
@@ -164,6 +166,12 @@ const HomepageLayout = () => (
         </Button>
       </Container>
     </Segment>
+
+    <Segment style={{ padding: '8em 0em' }} vertical>
+      <Container>
+        <ContactForm />
+      </Container>
+  </Segment>
 
     <Segment inverted vertical style={{ padding: '5em 0em' }}>
       <Container>
