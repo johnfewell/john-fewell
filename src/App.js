@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom';
 import './semantic/dist/semantic.min.css';
 import HomepageHeading from './HomepageHeading';
 import DesktopContainer from './DesktopContainer';
@@ -35,63 +36,69 @@ ResponsiveContainer.propTypes = {
 const HomepageLayout = () => (
   <ResponsiveContainer>
     <Segment style={{ padding: '8em 0em' }} vertical>
+        <Divider
+          as='h2'
+          className='header'
+          horizontal
+          style={{ margin: '3em 0em', textTransform: 'uppercase' }}
+        >
+        Projects
+        </Divider>
       <Grid columns={3} container stackable verticalAlign='middle'>
             <Grid.Column>
-              <Card className="ui raised link card">
-                <Image src='http://react.semantic-ui.com/images/avatar/large/matthew.png' />
+              <Card style={{ height: '410px', background: '#FEBBB2'  }} className="ui raised link card">
+                <Image
+                  fluid
+                  label={{ as: 'a', color: 'white', content: 'Fancy React Forms', icon: 'react', size: 'huge', ribbon: true }}
+                  src='' />
+                <Card.Content as='a'  href={'https://github.com/johnfewell/fancy-react-forms/tree/correct-track'}>
+                  <Header as='h2' style={{ marginTop: '80px', color: 'white' }}>
+                    This app allows the creation of forms and the ability to respond to those and view the responses in a Typeform-like way.
+                  </Header>
+                </Card.Content>
+                <Card.Content extra>
+                  <Icon name='react' size='large' />
+                  <Icon name='js' size='large' />
+                  <Icon name='html5' size='large' />
+                  React, Redux, JS
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+            <Grid.Column>
+              <Card style={{ height: '410', background: '#FEC021'  }}className="ui raised link card">
+                <Image
+                  fluid
+                  label={{ as: 'a', color: 'white', content: 'CE Evaluations', icon: 'react', size: 'huge', ribbon: true }}
+                  src='' />
                 <Card.Content>
-                  <Card.Header>Matthew</Card.Header>
-                  <Card.Meta>
-                    <span className='date'>Joined in 2015</span>
-                  </Card.Meta>
-                  <Card.Description>Matthew is a musician living in Nashville.</Card.Description>
+                  <Header as='h2' style={{ marginTop: '80px', color: 'white' }}>
+                    This app allows the creation and management of continuing education evaluations and certificates.
+                  </Header>
                 </Card.Content>
                 <Card.Content extra>
                   <a>
-                    <Icon name='react' /> <Icon name='js' /> <Icon name='html5' />
-                    22 Friends
+                    <Icon name='js' />
+                    <Icon name='ruby' />
+                    Rails, Ruby, JS
                   </a>
                 </Card.Content>
               </Card>
             </Grid.Column>
             <Grid.Column>
-              <Card className="ui raised link card">
+              <Card style={{ height: '410px', background: '#B2CDDE'  }}className="ui raised link card">
                 <Image
                   fluid
-                  label={{ as: 'a', color: 'blue', content: 'React', icon: 'react', size: 'huge', ribbon: true }}
-                  src='http://react.semantic-ui.com/images/avatar/large/elliot.jpg' />
+                  label={{ as: 'a', color: 'white', content: 'JavaScript', icon: 'js', size: 'huge', ribbon: true }}
+                  src='' />
                 <Card.Content>
-                  <Card.Header>Matthew</Card.Header>
-                  <Card.Meta>
-                    <span className='date'>Joined in 2015</span>
-                  </Card.Meta>
-                  <Card.Description>Matthew is a musician living in Nashville.</Card.Description>
+                  <Header as='h2' style={{ marginTop: '80px', color: 'white' }}>
+                    This app allows the tracking of classes, students, and instructors.
+                  </Header>
                 </Card.Content>
                 <Card.Content extra>
                   <a>
-                    <Icon name='user' />
-                    22 Friends
-                  </a>
-                </Card.Content>
-              </Card>
-            </Grid.Column>
-            <Grid.Column>
-              <Card className="ui raised link card">
-                <Image
-                  fluid
-                  label={{ as: 'a', color: 'black', content: 'JavaScript', icon: 'js', size: 'huge', ribbon: true }}
-                  src='http://react.semantic-ui.com/images/avatar/large/daniel.jpg' />
-                <Card.Content>
-                  <Card.Header>Matthew</Card.Header>
-                  <Card.Meta>
-                    <span className='date'>Joined in 2015</span>
-                  </Card.Meta>
-                  <Card.Description>Matthew is a musician living in Nashville.</Card.Description>
-                </Card.Content>
-                <Card.Content extra>
-                  <a>
-                    <Icon name='user' />
-                    22 Friends
+                    <Icon name='ruby' />
+                    Sinatra, Ruby
                   </a>
                 </Card.Content>
               </Card>

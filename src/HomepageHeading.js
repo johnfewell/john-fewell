@@ -11,7 +11,6 @@ const HomepageHeading = ({ mobile }) => (
   <Container text>
     <Header
       as='h1'
-      content='LOREM'
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
@@ -19,7 +18,18 @@ const HomepageHeading = ({ mobile }) => (
         marginBottom: 0,
         marginTop: mobile ? '1.5em' : '3em',
       }}
-    />
+    >I'm John.</Header>
+    <Header
+      as='h1'
+      inverted
+      style={{
+        fontSize: mobile ? '1em' : '3em',
+        fontWeight: 'normal',
+        marginBottom: 0,
+      }}
+    >I build beautiful and responsive <span className='replace-text'>web applications.</span>
+    </Header>
+
     <Header
       as='h2'
       content='Full Stack Dev IPSUM'
@@ -31,9 +41,7 @@ const HomepageHeading = ({ mobile }) => (
       }}
     />
     <div className="bounce">
-          <Icon name='angle down' />
-
-
+      <Icon name='angle down' size='big' color='white' />
     </div>
   </Container>
 )
