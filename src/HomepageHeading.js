@@ -29,17 +29,6 @@ const HomepageHeading = ({ mobile }) => (
       }}
     >I build beautiful and responsive <span className='replace-text'>web applications.</span>
     </Header>
-
-    <Header
-      as='h2'
-      content='Full Stack Dev IPSUM'
-      inverted
-      style={{
-        fontSize: mobile ? '1.5em' : '1.7em',
-        fontWeight: 'normal',
-        marginTop: mobile ? '0.5em' : '1.5em',
-      }}
-    />
     <div className="bounce">
       <Icon name='angle down' size='big' color='white' />
     </div>
@@ -51,3 +40,15 @@ HomepageHeading.propTypes = {
 }
 
 export default HomepageHeading
+
+
+// <Header
+//   as='h2'
+//   content='Full Stack Dev IPSUM'
+//   inverted
+//   style={{
+//     fontSize: mobile ? '1.5em' : '1.7em',
+//     fontWeight: 'normal',
+//     marginTop: mobile ? '0.5em' : '1.5em',
+//   }}
+// />

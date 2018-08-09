@@ -45,124 +45,75 @@ const HomepageLayout = () => (
         >
         Projects
         </Divider>
-      <Grid columns={3} container stackable verticalAlign='middle'>
-            <Grid.Column>
-              <Card style={{ height: '410px', background: '#FEBBB2'  }} className="ui raised link card">
-                <Image
-                  fluid
-                  label={{ as: 'a', color: 'white', content: 'Fancy React Forms', icon: 'react', size: 'huge', ribbon: true }}
-                  src='' />
-                <Card.Content as='a'  href={'https://github.com/johnfewell/fancy-react-forms/tree/correct-track'}>
-                  <Header as='h2' style={{ marginTop: '80px', color: 'white' }}>
-                    This app allows the creation of forms and the ability to respond to those and view the responses in a Typeform-like way.
-                  </Header>
-                </Card.Content>
-                <Card.Content extra>
-                  <Icon name='react' size='large' />
-                  <Icon name='js' size='large' />
-                  <Icon name='html5' size='large' />
-                  React, Redux, JS
-                </Card.Content>
-              </Card>
-            </Grid.Column>
-            <Grid.Column>
-              <Card style={{ height: '410', background: '#FEC021'  }}className="ui raised link card">
-                <Image
-                  fluid
-                  label={{ as: 'a', color: 'white', content: 'CE Evaluations', icon: 'react', size: 'huge', ribbon: true }}
-                  src='' />
-                <Card.Content as='a'  href={'https://github.com/johnfewell/ce-evals-app'}>
-                  <Header as='h2' style={{ marginTop: '80px', color: 'white' }}>
-                    This app allows the creation and management of continuing education evaluations and certificates.
-                  </Header>
-                </Card.Content>
-                <Card.Content extra>
-                  <a>
-                    <Icon name='js' />
-                    <Icon name='ruby' />
-                    Rails, Ruby, JS
-                  </a>
-                </Card.Content>
-              </Card>
-            </Grid.Column>
-            <Grid.Column>
-              <Card style={{ height: '410px', background: '#B2CDDE'  }}className="ui raised link card">
-                <Image
-                  fluid
-                  label={{ as: 'a', color: 'white', content: 'School Registration', icon: 'js', size: 'huge', ribbon: true }}
-                  src='' />
-                <Card.Content as='a' href={'https://github.com/johnfewell/sinatra-portfolio-school-registration'}
-                  >
-                  <Header as='h2' style={{ marginTop: '80px', color: 'white' }}>
-                    This app allows the tracking of classes, students, and instructors.
-                  </Header>
-                </Card.Content>
-                <Card.Content extra>
-                  <a>
-                    <Icon name='ruby' />
-                    Sinatra, Ruby
-                  </a>
-                </Card.Content>
-              </Card>
-            </Grid.Column>
-      </Grid>
-    </Segment>
+          <Card.Group centered>
+            <Card style={{ height: '410px', background: '#FEBBB2'  }} className="ui raised link card" >
+              <Image
+                fluid
+                label={{ as: 'a', color: 'white', content: 'Fancy React Forms', icon: 'react', size: 'huge', ribbon: true }}
+                src='' />
+              <Card.Content as='a'  href={'https://github.com/johnfewell/fancy-react-forms/tree/correct-track'} data-content="Add users to your feed">
+                <Header as='h2' style={{ marginTop: '80px', color: 'white' }}>
+                  This app allows for the creation of forms and the ability to respond to those and view the responses in a Typeform-like way.
+                </Header>
+              </Card.Content>
+              <Card.Content extra>
+                <Icon name='react' size='large' />
+                <Icon name='js' size='large' />
+                <Icon name='html5' size='large' />
+                React, Redux, JS
+              </Card.Content>
+            </Card>
+            <Card style={{ height: '410', background: '#FEC021'  }}className="ui raised link card">
+              <Image
+                fluid
+                label={{ as: 'a', color: 'white', content: 'CE Evaluations', icon: 'react', size: 'huge', ribbon: true }}
+                src='' />
+              <Card.Content as='a'  href={'https://github.com/johnfewell/ce-evals-app'}>
+                <Header as='h2' style={{ marginTop: '80px', color: 'white' }}>
+                  This app allows for the creation and management of continuing education evaluations and certificates.
+                </Header>
+              </Card.Content>
+              <Card.Content extra>
+                <a>
+                  <Icon name='js' />
+                  <Icon name='ruby' />
+                  Rails, Ruby, JS
+                </a>
+              </Card.Content>
+            </Card>
 
-    <Segment style={{ padding: '0em' }} vertical>
-      <Grid celled='internally' columns='equal' stackable>
-        <Grid.Row textAlign='center'>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              "What a Company"
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>That is what they all say about us</p>
-          </Grid.Column>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              "I shouldn't have gone with their competitor."
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>
-              <Image avatar src='/images/avatar/large/nan.jpg' />
-              <b>Nan</b> Chief Fun Officer Acme Toys
-            </p>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
+            <Card style={{ height: '410px', background: '#B2CDDE'  }}className="ui raised link card">
+              <Image
+                fluid
+                label={{ as: 'a', color: 'white', content: 'School Registration', icon: 'js', size: 'huge', ribbon: true }}
+                src='' />
+              <Card.Content as='a' href={'https://github.com/johnfewell/sinatra-portfolio-school-registration'}
+                >
+                <Header as='h2' style={{ marginTop: '80px', color: 'white' }}>
+                  This app allows the tracking of classes, students, and instructors.
+                </Header>
+              </Card.Content>
+              <Card.Content extra>
+                <a>
+                  <Icon name='ruby' />
+                  Sinatra, Ruby
+                </a>
+              </Card.Content>
+            </Card>
+          </Card.Group>
     </Segment>
 
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Container text>
         <Header as='h3' style={{ fontSize: '2em' }}>
-          Breaking The Grid, Grabs Your Attention
+          This site is built in React
         </Header>
         <p style={{ fontSize: '1.33em' }}>
-          Instead of focusing on content creation and hard work, we have learned how to master the
-          art of doing nothing by providing massive amounts of whitespace and generic content that
-          can seem massive, monolithic and worth your attention.
+          This site is built in React. For fun! More text. This is filler.
         </p>
-        <Button as='a' size='large'>
-          Read More
-        </Button>
-
-        <Divider
-          as='h4'
-          className='header'
-          horizontal
-          style={{ margin: '3em 0em', textTransform: 'uppercase' }}
-        >
-          <a href='#'>Case Studies</a>
-        </Divider>
-
-        <Header as='h3' style={{ fontSize: '2em' }}>
-          Did We Tell You About Our Bananas?
-        </Header>
-        <p style={{ fontSize: '1.33em' }}>
-          Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but
-          it's really true. It took years of gene splicing and combinatory DNA research, but our
-          bananas can really dance.
-        </p>
-        <Button as='a' size='large'>
-          I'm Still Quite Interested
+        <Button icon labelPosition='left' as='a' size='large'>
+          <Icon name='github' />
+          View on Github
         </Button>
       </Container>
     </Segment>
@@ -172,42 +123,45 @@ const HomepageLayout = () => (
         <ContactForm />
       </Container>
   </Segment>
-
-    <Segment inverted vertical style={{ padding: '5em 0em' }}>
-      <Container>
-        <Grid divided inverted stackable>
-          <Grid.Row>
-            <Grid.Column width={3}>
-              <Header inverted as='h4' content='About' />
-              <List link inverted>
-                <List.Item as='a'>Sitemap</List.Item>
-                <List.Item as='a'>Contact Us</List.Item>
-                <List.Item as='a'>Religious Ceremonies</List.Item>
-                <List.Item as='a'>Gazebo Plans</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as='h4' content='Services' />
-              <List link inverted>
-                <List.Item as='a'>Banana Pre-Order</List.Item>
-                <List.Item as='a'>DNA FAQ</List.Item>
-                <List.Item as='a'>How To Access</List.Item>
-                <List.Item as='a'>Favorite X-Men</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={7}>
-              <Header as='h4' inverted>
-                Footer Header
-              </Header>
-              <p>
-                Extra space for a call to action inside the footer that could help re-engage users.
-              </p>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </Container>
-    </Segment>
   </ResponsiveContainer>
 )
 
 export default HomepageLayout
+
+
+// The old footer
+//
+// <Segment inverted vertical style={{ padding: '5em 0em' }}>
+//   <Container>
+//     <Grid divided inverted stackable>
+//       <Grid.Row>
+//         <Grid.Column width={3}>
+//           <Header inverted as='h4' content='About' />
+//           <List link inverted>
+//             <List.Item as='a'>Sitemap</List.Item>
+//             <List.Item as='a'>Contact Us</List.Item>
+//             <List.Item as='a'>Religious Ceremonies</List.Item>
+//             <List.Item as='a'>Gazebo Plans</List.Item>
+//           </List>
+//         </Grid.Column>
+//         <Grid.Column width={3}>
+//           <Header inverted as='h4' content='Services' />
+//           <List link inverted>
+//             <List.Item as='a'>Banana Pre-Order</List.Item>
+//             <List.Item as='a'>DNA FAQ</List.Item>
+//             <List.Item as='a'>How To Access</List.Item>
+//             <List.Item as='a'>Favorite X-Men</List.Item>
+//           </List>
+//         </Grid.Column>
+//         <Grid.Column width={7}>
+//           <Header as='h4' inverted>
+//             Footer Header
+//           </Header>
+//           <p>
+//             Extra space for a call to action inside the footer that could help re-engage users.
+//           </p>
+//         </Grid.Column>
+//       </Grid.Row>
+//     </Grid>
+//   </Container>
+// </Segment>
