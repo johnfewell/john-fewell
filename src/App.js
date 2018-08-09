@@ -49,10 +49,10 @@ const HomepageLayout = () => (
             <Card style={{ height: '410px', background: '#FEBBB2'  }} className="ui raised link card" >
               <Image
                 fluid
-                label={{ as: 'a', color: 'white', content: 'Fancy React Forms', icon: 'react', size: 'huge', ribbon: true }}
+                label={{ as: 'a', color: '#01444D', content: 'Fancy React Forms', icon: 'react', size: 'huge', ribbon: true }}
                 src='' />
               <Card.Content as='a' href={'https://github.com/johnfewell/fancy-react-forms/tree/correct-track'} data-content="Add users to your feed">
-                <Header as='h2' style={{ marginTop: '80px', color: 'white' }}>
+                <Header as='h2' style={{ marginTop: '80px', color: '#01444D' }}>
                   This app allows for the creation of forms and the ability to respond to those and view the responses in a Typeform-like way.
                 </Header>
               </Card.Content>
@@ -66,17 +66,16 @@ const HomepageLayout = () => (
             <Card style={{ height: '410', background: '#FEC021'  }}className="ui raised link card">
               <Image
                 fluid
-                label={{ as: 'a', color: 'white', content: 'CE Evaluations', icon: 'react', size: 'huge', ribbon: true }}
+                label={{ as: 'a', color: '#013FDE', content: 'CE Evaluations', icon: 'react', size: 'huge', ribbon: true }}
                 src='' />
               <Card.Content as='a'  href={'https://github.com/johnfewell/ce-evals-app'}>
-                <Header as='h2' style={{ marginTop: '80px', color: 'white' }}>
+                <Header as='h2' style={{ marginTop: '80px', color: '#013FDE' }}>
                   This app allows for the creation and management of continuing education evaluations and certificates.
                 </Header>
               </Card.Content>
               <Card.Content extra>
                 <a>
-                  <Icon name='js' />
-                  <Icon name='ruby' />
+                  <Icon name='js' size='large' />
                   Rails, Ruby, JS
                 </a>
               </Card.Content>
@@ -85,17 +84,16 @@ const HomepageLayout = () => (
             <Card style={{ height: '410px', background: '#B2CDDE'  }}className="ui raised link card">
               <Image
                 fluid
-                label={{ as: 'a', color: 'white', content: 'School Registration', icon: 'js', size: 'huge', ribbon: true }}
+                label={{ as: 'a', color: '#4D3221', content: 'School Registration', icon: 'js', size: 'huge', ribbon: true }}
                 src='' />
               <Card.Content as='a' href={'https://github.com/johnfewell/sinatra-portfolio-school-registration'}
                 >
-                <Header as='h2' style={{ marginTop: '80px', color: 'white' }}>
+                <Header as='h2' style={{ marginTop: '80px', color: '#4D3221' }}>
                   This app allows the tracking of classes, students, and instructors.
                 </Header>
               </Card.Content>
               <Card.Content extra>
                 <a>
-                  <Icon name='ruby' />
                   Sinatra, Ruby
                 </a>
               </Card.Content>
@@ -109,9 +107,9 @@ const HomepageLayout = () => (
           This site is built in React
         </Header>
         <p style={{ fontSize: '1.33em' }}>
-          This site is built in React. For fun! More text. This is filler.
+          This site is built in React using Semantic UI. I thought it would be a fun challenge and learning experience and it has been.
         </p>
-        <Button icon labelPosition='left' as='a' size='large'>
+        <Button icon labelPosition='left' as='a' href='https://github.com/johnfewell/john-fewell' size='large'>
           <Icon name='github' />
           View on Github
         </Button>
