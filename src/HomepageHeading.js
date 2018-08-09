@@ -4,7 +4,8 @@ import {
   Button,
   Container,
   Header,
-  Icon
+  Icon,
+  Label
 } from 'semantic-ui-react'
 
 const HomepageHeading = ({ mobile }) => (
@@ -30,7 +31,7 @@ const HomepageHeading = ({ mobile }) => (
     >I build beautiful and responsive <span className='replace-text'>web applications.</span>
     </Header>
     <div className="bounce">
-      <Icon name='angle down' size='big' color='white' />
+      <Label pointing='below'>Scroll</Label>
     </div>
   </Container>
 )

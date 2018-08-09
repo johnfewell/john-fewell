@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import ContactForm from './ContactForm'
 import './semantic/dist/semantic.min.css';
 import HomepageHeading from './HomepageHeading';
@@ -51,7 +51,7 @@ const HomepageLayout = () => (
                 fluid
                 label={{ as: 'a', color: 'white', content: 'Fancy React Forms', icon: 'react', size: 'huge', ribbon: true }}
                 src='' />
-              <Card.Content as='a'  href={'https://github.com/johnfewell/fancy-react-forms/tree/correct-track'} data-content="Add users to your feed">
+              <Card.Content as='a' href={'https://github.com/johnfewell/fancy-react-forms/tree/correct-track'} data-content="Add users to your feed">
                 <Header as='h2' style={{ marginTop: '80px', color: 'white' }}>
                   This app allows for the creation of forms and the ability to respond to those and view the responses in a Typeform-like way.
                 </Header>
