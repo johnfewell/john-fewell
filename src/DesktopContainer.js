@@ -72,7 +72,7 @@ class DesktopContainer extends Component {
                   <Icon name='list alternate outline' />
                   Blog
                 </Menu.Item>
-                <Menu.Item as='a' href=''>
+                <Menu.Item as='a' href='mailto:fewell@gmail.com'>
                   <Icon name='mail' />
                   Contact
                 </Menu.Item>
