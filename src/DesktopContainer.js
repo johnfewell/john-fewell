@@ -49,14 +49,33 @@ class DesktopContainer extends Component {
               pointing={!fixed}
               secondary={!fixed}
               size='large'
+              icon='labeled'
             >
               <Container>
-                <Menu.Item as='a' active>
-                  Home
+                <Menu.Item name='home' as='a' active>
+                  <Icon name='meh' />
+                  John Fewell
                 </Menu.Item>
-                <Menu.Item as='a'>Projects</Menu.Item>
-                <Menu.Item as='a'>Contact</Menu.Item>
-
+                <Menu.Item as='a' href='https://github.com/johnfewell/'>
+                  <Icon name='github' />
+                  Github
+                </Menu.Item>
+                <Menu.Item
+                  name='linkedin'
+                  as='a' href='https://linkedin.com/in/johnfewell/'>
+                  <Icon name='linkedin' />
+                  Linkedin
+                </Menu.Item>
+                <Menu.Item
+                  name='list alternate outline'
+                  as='a' href='https://y9u.org/'>
+                  <Icon name='list alternate outline' />
+                  Blog
+                </Menu.Item>
+                <Menu.Item as='a' href=''>
+                  <Icon name='mail' />
+                  Contact
+                </Menu.Item>
               </Container>
             </Menu>
             <HomepageHeading />
