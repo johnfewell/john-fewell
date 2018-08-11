@@ -10,11 +10,12 @@ body {
 }
 
 .svgbox {
-  height: 22px;
-  width: 22px;
-  margin-right: .5em;
-  color: rgba(0,0,0,.4);
+  height: 21px;
+  width: 21px;
+  margin-right: 3.5px;
+  fill: rgba(0,0,0,.4);
   display: inline-block;
+  vertical-align: middle;
 }
 
 .replace-text {

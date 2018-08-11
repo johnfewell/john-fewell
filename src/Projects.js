@@ -41,7 +41,7 @@ const Projects = () => (
             <ReduxIcon />
             <Icon name='react' size='large' />
             <Icon name='js' size='large' />
-            React, Redux, JS
+            React, Redux, JavaScript
           </Card.Content>
         </Card>
         <Card style={{ height: '410', background: '#FEC021'  }} className="ui raised link card">
@@ -61,7 +61,7 @@ const Projects = () => (
             <RailsIcon />
             <RubyIcon />
             <Icon name='js' size='large' />
-              Rails, Ruby, JS
+              Rails, Ruby, JavaScript
           </Card.Content>
         </Card>
         <Card style={{ height: '410px', background: '#B2CDDE'  }}className="ui raised link card">
