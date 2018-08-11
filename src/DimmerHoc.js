@@ -13,7 +13,7 @@ class DimmerHoc extends Component {
   render(){
     const { active } = this.state
     return (
-      <Observer onChange={(inView) => {this.handleChange(inView)}} threshold='.9999' >
+      <Observer onChange={(inView) => {this.handleChange(inView)}} threshold='.5' >
         <Dimmer.Dimmable as={Segment} blurring dimmed={active} className='borderless form-group-padding'>
           <Dimmer active={active} inverted onClickOutside={this.handleHide} />
             {this.props.children}
