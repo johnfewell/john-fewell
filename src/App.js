@@ -7,6 +7,7 @@ import DesktopContainer from './DesktopContainer';
 import MobileContainer from './MobileContainer';
 import DimmerHoc from './DimmerHoc';
 import AboutMe from './AboutMe';
+import GetInTouch from './GetInTouch'
 import Projects from './Projects';
 import SiteInReact from './SiteInReact';
 import React, { Component } from 'react'
@@ -49,16 +50,9 @@ const HomepageLayout = () => (
     <DimmerHoc>
       <SiteInReact />
     </DimmerHoc>
-
-
-    <Segment style={{ padding: '8em 0em' }} vertical>
-      <Container textAlign='center' >
-        <Header as='h2'>Get in touch.</Header>
-        <Header as='h3'>
-          <a href='mailto:fewell@gmail.com'>fewell@gmail.com</a>
-        </Header>
-      </Container>
-  </Segment>
+    <DimmerHoc>
+      <GetInTouch />
+    </DimmerHoc>
   </ResponsiveContainer>
 )
 

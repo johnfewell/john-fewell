@@ -14,10 +14,10 @@ const HomepageHeading = ({ mobile }) => (
       as='h1'
       inverted
       style={{
-        fontSize: mobile ? '2em' : '4em',
+        fontSize: '5.9vw',
         fontWeight: 'normal',
         marginBottom: 0,
-        marginTop: mobile ? '1.5em' : '3em',
+        marginTop: '10vh',
       }}
     >I'm John.</Header>
     <Header
