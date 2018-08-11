@@ -48,17 +48,17 @@ class MobileContainer extends Component {
             dimmed={sidebarOpened}
             onClick={this.handlePusherClick}
             style={{ minHeight: '100vh' }}
-          >
+          ><div className='page-body'>
             <Segment
-              inverted
+
               textAlign='center'
-              style={{ minHeight: 350, padding: '1em 0em' }}
+              style={{ height: '100vh', padding: '1em 0em' }}
               vertical
             >
-          
+
               <HomepageHeading mobile />
             </Segment>
-
+          </div>
             {children}
           </Sidebar.Pusher>
         </Sidebar.Pushable>

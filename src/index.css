@@ -11,22 +11,8 @@ body {
 
 
 .replace-text {
-    background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
-
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
-
-.fa {
- width: 60px;
- display: block;
- text-align: center;
- color:#990000;
- font:normal 45px 'FontAwesome';
- line-height:60px;
- text-rendering: auto;
- -webkit-font-smoothing: antialiased;
-}
-.fa-angle-double-down:before {content: "\f103";}
 
 .bounce {
  position: absolute;
@@ -69,76 +55,4 @@ body {
   background-image: url('./bg.jpg');
   background-color: #cccccc;
   background-attachment: fixed;
-}
-
-.parallax {
-  #stars1 {
-    width: 2px;
-    height: 2px;
-    border-radius: 50%;
-    background: transparent;
-    box-shadow: $shadows-small;
-    animation: animStar 150s linear infinite;
-
-    &:after {
-      content: " ";
-      position: absolute;
-      top: 2000px;
-      width: 2px;
-      height: 2px;
-      border-radius: 50%;
-      background: transparent;
-      box-shadow: $shadows-small;
-    }
-  }
-
-  #stars2 {
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background: transparent;
-    box-shadow: $shadows-medium;
-    animation: animStar 100s linear infinite;
-
-    &:after {
-      content: " ";
-      position: absolute;
-      top: 2000px;
-      width: 3px;
-      height: 3px;
-      border-radius: 50%;
-      background: transparent;
-      box-shadow: $shadows-medium;
-    }
-  }
-
-  #stars3 {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: transparent;
-    box-shadow: $shadows-big;
-    animation: animStar 50s linear infinite;
-
-    &:after {
-      content: " ";
-      position: absolute;
-      top: 2000px;
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background: transparent;
-      box-shadow: $shadows-big;
-    }
-  }
-
-  @keyframes animStar {
-    from {
-      transform: translateY(-2000px);
-    }
-
-    to {
-      transform: translateY(0px);
-    }
-  }
 }

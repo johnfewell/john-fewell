@@ -14,23 +14,23 @@ const HomepageHeading = ({ mobile }) => (
       as='h1'
       inverted
       style={{
-        fontSize: '5.9vw',
+        fontSize: mobile ? '3em' : '5.9vw',
         fontWeight: 'normal',
         marginBottom: 0,
-        marginTop: '10vh',
+        marginTop: '12vh',
       }}
     >I'm John.</Header>
     <Header
       as='h1'
       inverted
       style={{
-        fontSize: mobile ? '1em' : '3em',
+        fontSize: mobile ? '2em' : '2.5vw',
         fontWeight: 'normal',
         marginBottom: 0,
       }}
     >I build beautiful and responsive <span className='replace-text'>web applications.</span>
     </Header>
-    <div className="bounce">
+    <div className="ui bounce large monitor">
       <Label pointing='below'>Scroll</Label>
     </div>
   </Container>
@@ -41,15 +41,3 @@ HomepageHeading.propTypes = {
 }
 
 export default HomepageHeading
-
-
-// <Header
-//   as='h2'
-//   content='Full Stack Dev IPSUM'
-//   inverted
-//   style={{
-//     fontSize: mobile ? '1.5em' : '1.7em',
-//     fontWeight: 'normal',
-//     marginTop: mobile ? '0.5em' : '1.5em',
-//   }}
-// />
