@@ -9,10 +9,23 @@ body {
   margin-left: 1.5em !important;
 }
 
+.svgbox {
+  height: 22px;
+  width: 22px;
+  margin-right: .5em;
+  color: rgba(0,0,0,.4);
+  display: inline-block;
+}
 
 .replace-text {
   background-color: rgba(255, 255, 255, 0.1);
 }
+
+/* svg {
+    height: 5px;
+    width: 5px;
+} */
+
 
 .bounce {
  position: absolute;

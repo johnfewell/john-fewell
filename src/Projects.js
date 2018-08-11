@@ -1,4 +1,7 @@
 import React from 'react'
+import ReduxIcon from './ReduxIcon'
+import RubyIcon from './RubyIcon'
+import RailsIcon from './RailsIcon'
 import {
   Button,
   Container,
@@ -27,7 +30,7 @@ const Projects = () => (
             fluid
             label={{ as: 'a', color: '#01444D', content: 'Fancy React Forms', icon: 'react', size: 'huge', ribbon: true }}
             src='' />
-          <Card.Content as='a' href={'https://github.com/johnfewell/fancy-react-forms/tree/correct-track'} data-content="Add users to your feed">
+          <Card.Content as='a' href={'https://github.com/johnfewell/fancy-react-forms/'} data-content="Add users to your feed">
             <Header as='h2' style={{ marginTop: '80px', color: '#01444D' }}>
               This app allows for the creation of forms and the ability to respond to those and view the responses in a Typeform-like way.
             </Header>
@@ -39,11 +42,16 @@ const Projects = () => (
             React, Redux, JS
           </Card.Content>
         </Card>
-        <Card style={{ height: '410', background: '#FEC021'  }}className="ui raised link card">
-          <Image
-            fluid
-            label={{ as: 'a', color: '#013FDE', content: 'CE Evaluations', icon: 'react', size: 'huge', ribbon: true }}
-            src='' />
+        <Card style={{ height: '410', background: '#FEC021'  }} className="ui raised link card">
+          <div className="ui fluid image">
+            <a className="ui #013FDE huge ribbon label">
+              <ReduxIcon />
+              <RubyIcon />
+              <RailsIcon />
+            CE Evaluations
+            </a>
+          </div>
+
           <Card.Content as='a'  href={'https://github.com/johnfewell/ce-evals-app'}>
             <Header as='h2' style={{ marginTop: '80px', color: '#013FDE' }}>
               This app allows for the creation and management of continuing education evaluations and certificates.
