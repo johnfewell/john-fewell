@@ -1,32 +1,48 @@
-import React from 'react'
-import { Button, Checkbox, Form, Header, Divider, TextArea } from 'semantic-ui-react'
+import React from "react";
+import {
+  Button,
+  Checkbox,
+  Form,
+  Header,
+  Divider,
+  TextArea
+} from "semantic-ui-react";
 
 const ContactForm = () => (
   <div>
     <Divider
-      as='h2'
-      className='header'
+      as="h2"
+      className="header"
       horizontal
-      style={{ textTransform: 'uppercase' }}
+      style={{ textTransform: "uppercase" }}
     >
-    Get in touch.
+      Get in touch.
     </Divider>
-    <Form size='huge' action="https://formspree.io/fewell@gmail.com"
-      method="POST">
+    <Form
+      size="huge"
+      action="https://formspree.io/fewell@gmail.com"
+      method="POST"
+    >
       <Form.Field>
         <label>First Name</label>
-        <input placeholder='First Name' />
+        <input placeholder="First Name" />
       </Form.Field>
       <Form.Field>
         <label>Last Name</label>
-        <input placeholder='Last Name' />
+        <input placeholder="Last Name" />
       </Form.Field>
       <Form.Field>
-       <Form.Field control={TextArea} label='Message' placeholder='Send a message...' />
+        <Form.Field
+          control={TextArea}
+          label="Message"
+          placeholder="Send a message..."
+        />
       </Form.Field>
-      <Button type='submit' size='huge'>Submit</Button>
+      <Button type="submit" size="huge">
+        Submit
+      </Button>
     </Form>
   </div>
-)
+);
 
-export default ContactForm
+export default ContactForm;

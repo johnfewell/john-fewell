@@ -1,16 +1,16 @@
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 // import { Link } from 'react-router-dom';
-import ContactForm from './ContactForm'
-import './semantic/dist/semantic.min.css';
-import HomepageHeading from './HomepageHeading';
-import DesktopContainer from './DesktopContainer';
-import MobileContainer from './MobileContainer';
-import DimmerHoc from './DimmerHoc';
-import AboutMe from './AboutMe';
-import GetInTouch from './GetInTouch'
-import Projects from './Projects';
-import SiteInReact from './SiteInReact';
-import React, { Component } from 'react'
+import ContactForm from "./ContactForm";
+import "./semantic/dist/semantic.min.css";
+import HomepageHeading from "./HomepageHeading";
+import DesktopContainer from "./DesktopContainer";
+import MobileContainer from "./MobileContainer";
+import DimmerHoc from "./DimmerHoc";
+import AboutMe from "./AboutMe";
+import GetInTouch from "./GetInTouch";
+import Projects from "./Projects";
+import SiteInReact from "./SiteInReact";
+import React, { Component } from "react";
 import {
   Button,
   Container,
@@ -25,19 +25,19 @@ import {
   Responsive,
   Segment,
   Sidebar,
-  Visibility,
-} from 'semantic-ui-react'
+  Visibility
+} from "semantic-ui-react";
 
 const ResponsiveContainer = ({ children }) => (
   <div>
     <DesktopContainer>{children}</DesktopContainer>
     <MobileContainer>{children}</MobileContainer>
   </div>
-)
+);
 
 ResponsiveContainer.propTypes = {
-  children: PropTypes.node,
-}
+  children: PropTypes.node
+};
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
@@ -54,10 +54,9 @@ const HomepageLayout = () => (
       <GetInTouch />
     </DimmerHoc>
   </ResponsiveContainer>
-)
+);
 
-export default HomepageLayout
-
+export default HomepageLayout;
 
 // The old footer
 //
