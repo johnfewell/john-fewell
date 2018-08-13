@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 // import { Link } from 'react-router-dom';
 import ContactForm from "./ContactForm";
+import { Helmet } from "react-helmet";
 import "./semantic/dist/semantic.min.css";
 import HomepageHeading from "./HomepageHeading";
 import DesktopContainer from "./DesktopContainer";
@@ -30,6 +31,15 @@ import {
 
 const ResponsiveContainer = ({ children }) => (
   <div>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>John Fewell | Full stack web dev</title>
+      <meta
+        name="description"
+        content="This is my portfolio site and has links to my blog, my github and my recent projects."
+      />
+      <link rel="canonical" href="http://johnfewell.com" />
+    </Helmet>
     <DesktopContainer>{children}</DesktopContainer>
     <MobileContainer>{children}</MobileContainer>
   </div>
