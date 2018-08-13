@@ -1,9 +1,7 @@
 import PropTypes from "prop-types";
 // import { Link } from 'react-router-dom';
-import ContactForm from "./ContactForm";
 import { Helmet } from "react-helmet";
 import "./semantic/dist/semantic.min.css";
-import HomepageHeading from "./HomepageHeading";
 import DesktopContainer from "./DesktopContainer";
 import MobileContainer from "./MobileContainer";
 import DimmerHoc from "./DimmerHoc";
@@ -11,22 +9,10 @@ import AboutMe from "./AboutMe";
 import GetInTouch from "./GetInTouch";
 import Projects from "./Projects";
 import SiteInReact from "./SiteInReact";
-import React, { Component } from "react";
+import React from "react";
 import {
-  Button,
-  Container,
-  Divider,
-  Grid,
-  Header,
-  Icon,
-  Card,
-  Image,
-  List,
-  Menu,
-  Responsive,
-  Segment,
-  Sidebar,
-  Visibility
+  
+  Responsive
 } from "semantic-ui-react";
 
 const ResponsiveContainer = ({ children }) => (
