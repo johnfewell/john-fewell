@@ -2,19 +2,11 @@ import PropTypes from "prop-types";
 import HomepageHeading from "./HomepageHeading";
 import React, { Component } from "react";
 import {
-  Button,
   Container,
-  Divider,
-  Grid,
-  Header,
   Icon,
-  Card,
-  Image,
-  List,
   Menu,
   Responsive,
   Segment,
-  Sidebar,
   Visibility
 } from "semantic-ui-react";
 

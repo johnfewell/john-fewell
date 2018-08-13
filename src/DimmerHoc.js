@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { Dimmer, Segment } from "semantic-ui-react";
 import Observer from "react-intersection-observer";
 

@@ -1,5 +1,5 @@
+import React from "react";
 import PropTypes from "prop-types";
-// import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 import "./semantic/dist/semantic.min.css";
 import DesktopContainer from "./DesktopContainer";
@@ -9,11 +9,6 @@ import AboutMe from "./AboutMe";
 import GetInTouch from "./GetInTouch";
 import Projects from "./Projects";
 import SiteInReact from "./SiteInReact";
-import React from "react";
-import {
-  
-  Responsive
-} from "semantic-ui-react";
 
 const ResponsiveContainer = ({ children }) => (
   <div>

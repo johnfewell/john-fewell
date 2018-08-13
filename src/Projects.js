@@ -3,15 +3,11 @@ import ReduxIcon from "./ReduxIcon";
 import RubyIcon from "./RubyIcon";
 import RailsIcon from "./RailsIcon";
 import {
-  Button,
-  Container,
   Header,
   Icon,
-  Label,
   Segment,
   Divider,
-  Card,
-  Image
+  Card
 } from "semantic-ui-react";
 
 const Projects = () => (

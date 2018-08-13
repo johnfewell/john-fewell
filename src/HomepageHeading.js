@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import { Button, Container, Header, Icon, Label } from "semantic-ui-react";
+import { Container, Header, Label } from "semantic-ui-react";
 
 const HomepageHeading = ({ mobile }) => (
   <Container text>

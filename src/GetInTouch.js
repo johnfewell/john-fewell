@@ -1,14 +1,8 @@
 import React from "react";
 import {
-  Button,
   Container,
   Header,
-  Icon,
-  Label,
-  Segment,
-  Divider,
-  Card,
-  Image
+  Segment
 } from "semantic-ui-react";
 
 const GetInTouch = () => (

@@ -2,20 +2,10 @@ import PropTypes from "prop-types";
 import React, { Component } from "react";
 import HomepageHeading from "./HomepageHeading";
 import {
-  Button,
-  Container,
-  Divider,
-  Grid,
-  Header,
-  Icon,
-  Card,
-  Image,
-  List,
   Menu,
   Responsive,
   Segment,
-  Sidebar,
-  Visibility
+  Sidebar
 } from "semantic-ui-react";
 
 class MobileContainer extends Component {

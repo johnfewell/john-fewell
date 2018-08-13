@@ -4,11 +4,7 @@ import {
   Container,
   Header,
   Icon,
-  Label,
-  Segment,
-  Divider,
-  Card,
-  Image
+  Segment
 } from "semantic-ui-react";
 
 const SiteInReact = () => (

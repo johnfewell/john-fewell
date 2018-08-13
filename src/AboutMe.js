@@ -1,10 +1,7 @@
 import React from 'react'
 import {
-  Button,
   Container,
   Header,
-  Icon,
-  Label,
   Segment
 } from 'semantic-ui-react'
 
