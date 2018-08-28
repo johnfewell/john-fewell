@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
 import "./semantic/dist/semantic.min.css";
 import DesktopContainer from "./DesktopContainer";
 import MobileContainer from "./MobileContainer";
@@ -12,15 +11,6 @@ import SiteInReact from "./SiteInReact";
 
 const ResponsiveContainer = ({ children }) => (
   <div>
-    <Helmet>
-      <meta charSet="utf-8" />
-      <title>John Fewell | Full stack web dev</title>
-      <meta
-        name="description"
-        content="This is my portfolio site and has links to my blog, my github and my recent projects."
-      />
-      <link rel="canonical" href="http://johnfewell.com" />
-    </Helmet>
     <DesktopContainer>{children}</DesktopContainer>
     <MobileContainer>{children}</MobileContainer>
   </div>

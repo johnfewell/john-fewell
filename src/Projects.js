@@ -2,13 +2,7 @@ import React from "react";
 import ReduxIcon from "./ReduxIcon";
 import RubyIcon from "./RubyIcon";
 import RailsIcon from "./RailsIcon";
-import {
-  Header,
-  Icon,
-  Segment,
-  Divider,
-  Card
-} from "semantic-ui-react";
+import { Header, Icon, Segment, Divider, Popup, Card } from "semantic-ui-react";
 
 const Projects = () => (
   <Segment style={{ padding: "8em 0em" }} vertical>
@@ -21,33 +15,39 @@ const Projects = () => (
       Projects
     </Divider>
     <Card.Group centered>
-      <Card
-        style={{ height: "410px", background: "#FEBBB2" }}
-        className="ui raised link card"
-      >
-        <div className="ui fluid image">
-          <div className="ui huge ribbon label">
-            <Icon name="code" />
-            Fancy React Forms
-          </div>
-        </div>
-        <Card.Content
-          as="a"
-          href={"https://github.com/johnfewell/fancy-react-forms/"}
-          data-content="Add users to your feed"
-        >
-          <Header as="h2" style={{ marginTop: "80px", color: "#01444D" }}>
-            This app allows for the creation of forms and the ability to respond
-            to those and view the responses in a Typeform-like way.
-          </Header>
-        </Card.Content>
-        <Card.Content extra>
-          <ReduxIcon />
-          <Icon name="react" size="large" />
-          <Icon name="js" size="large" />
-          React, Redux, JavaScript
-        </Card.Content>
-      </Card>
+      <Popup
+        trigger={
+          <Card
+            style={{ height: "410px", background: "#FEBBB2" }}
+            className="ui raised link card"
+          >
+            <div className="ui fluid image">
+              <div className="ui huge ribbon label">
+                <Icon name="code" />
+                Fancy React Forms
+              </div>
+            </div>
+            <Card.Content
+              as="a"
+              href={"https://github.com/johnfewell/fancy-react-forms/"}
+              data-content="Add users to your feed"
+            >
+              <Header as="h2" style={{ marginTop: "80px", color: "#01444D" }}>
+                This app allows for the creation of forms and the ability to
+                respond to those and view the responses in a Typeform-like way.
+              </Header>
+            </Card.Content>
+            <Card.Content extra>
+              <ReduxIcon />
+              <Icon name="react" size="large" />
+              <Icon name="js" size="large" />
+              React, Redux, JavaScript
+            </Card.Content>
+          </Card>
+        }
+        content="Hide the popup on any scroll event"
+        hideOnScroll
+      />
       <Card
         style={{ height: "410", background: "#FEC021" }}
         className="ui raised link card"
@@ -75,31 +75,34 @@ const Projects = () => (
           Rails, Ruby, JavaScript
         </Card.Content>
       </Card>
-      <Card
-        style={{ height: "410px", background: "#B2CDDE" }}
-        className="ui raised link card"
-      >
-        <div className="ui fluid image">
-          <div className="ui huge ribbon label">
-            <Icon name="code" />
-            School Registration
-          </div>
-        </div>
-        <Card.Content
-          as="a"
-          href={
-            "https://github.com/johnfewell/sinatra-portfolio-school-registration"
-          }
+      <div class="ui icon button" data-tooltip="Add users to your feed">
+        <Card
+          style={{ height: "410px", background: "#B2CDDE" }}
+          className="ui raised link card"
         >
-          <Header as="h2" style={{ marginTop: "80px", color: "#4D3221" }}>
-            This app allows the tracking of classes, students, and instructors.
-          </Header>
-        </Card.Content>
-        <Card.Content extra>
-          <RubyIcon />
-          Sinatra, Ruby
-        </Card.Content>
-      </Card>
+          <div className="ui fluid image">
+            <div className="ui huge ribbon label">
+              <Icon name="code" />
+              School Registration
+            </div>
+          </div>
+          <Card.Content
+            as="a"
+            href={
+              "https://github.com/johnfewell/sinatra-portfolio-school-registration"
+            }
+          >
+            <Header as="h2" style={{ marginTop: "80px", color: "#4D3221" }}>
+              This app allows the tracking of classes, students, and
+              instructors.
+            </Header>
+          </Card.Content>
+          <Card.Content extra>
+            <RubyIcon />
+            Sinatra, Ruby
+          </Card.Content>
+        </Card>
+      </div>
     </Card.Group>
   </Segment>
 );
