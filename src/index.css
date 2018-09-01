@@ -66,8 +66,24 @@ body {
 }
 
 .page-body {
-  background-image: url('./assets/bg5.jpg');
-  background-color: #cccccc;
-  background-attachment: fixed;
-  background: linear-gradient(145deg, rgba(16, 88, 232, 0.78), rgba(255,0,0,0));
+  background-image: -webkit-linear-gradient(270deg, #2b62d8, transparent);
+  background-image: linear-gradient(180deg, #2b62d8, transparent);
+}
+
+.gradient-1 {
+  height: 100%;
+  background-image: -webkit-linear-gradient(167deg, #bbda9e, rgba(167, 109, 160, .6) 38%, transparent);
+  background-image: linear-gradient(283deg, #bbda9e, rgba(167, 109, 160, .6) 38%, transparent);
+}
+
+.gradient-2 {
+  height: 50%;
+  background-image: -webkit-linear-gradient(270deg, #f4c4b5, hsla(14, 74%, 83%, .51) 40%, transparent 81%);
+  background-image: linear-gradient(180deg, #f4c4b5, hsla(14, 74%, 83%, .51) 40%, transparent 81%);
+}
+
+.gradient-3 {
+  height: 50%;
+  background-image: -webkit-radial-gradient(circle farthest-side at 7% 84%, #b0ca49, transparent 37%);
+  background-image: radial-gradient(circle farthest-side at 7% 84%, #b0ca49, transparent 37%);
 }

@@ -27,7 +27,10 @@ class DesktopContainer extends Component {
           onBottomPassed={this.showFixedMenu}
           onBottomPassedReverse={this.hideFixedMenu}
         >
-          <div className="page-body">
+          <div className="page-body gradient-1">
+            <div className="gradient-2">
+              <div className="gradient-3">
+
             <Segment
               textAlign="center"
               style={{ height: "50vw", padding: "1em 0em" }}
@@ -74,6 +77,8 @@ class DesktopContainer extends Component {
               </Menu>
               <HomepageHeading />
             </Segment>
+            </div>
+            </div>
           </div>
         </Visibility>
         {children}

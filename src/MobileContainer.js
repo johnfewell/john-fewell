@@ -46,7 +46,9 @@ class MobileContainer extends Component {
             onClick={this.handlePusherClick}
             style={{ minHeight: "100vh" }}
           >
-            <div className="page-body">
+          <div className="page-body gradient-1">
+            <div className="gradient-2">
+              <div className="gradient-3">
               <Segment
                 textAlign="center"
                 style={{ height: "100vh", padding: "1em 0em" }}
@@ -54,6 +56,8 @@ class MobileContainer extends Component {
               >
                 <HomepageHeading mobile />
               </Segment>
+            </div>
+            </div>
             </div>
             {children}
           </Sidebar.Pusher>

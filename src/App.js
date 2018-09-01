@@ -22,18 +22,10 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-    <DimmerHoc>
-      <AboutMe />
-    </DimmerHoc>
-    <DimmerHoc>
-      <Projects />
-    </DimmerHoc>
-    <DimmerHoc>
-      <SiteInReact />
-    </DimmerHoc>
-    <DimmerHoc>
-      <GetInTouch />
-    </DimmerHoc>
+    <AboutMe />
+    <Projects />
+    <SiteInReact />
+    <GetInTouch />
   </ResponsiveContainer>
 );
 
