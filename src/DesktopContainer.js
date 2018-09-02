@@ -33,7 +33,7 @@ class DesktopContainer extends Component {
 
             <Segment
               textAlign="center"
-              style={{ height: "50vw", padding: "1em 0em" }}
+              style={{ height: "100vh", padding: "1em 0em" }}
               vertical
             >
               <Menu
