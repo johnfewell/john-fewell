@@ -17,9 +17,7 @@ const SiteInReact = () => (
         This site is built in React using Semantic UI. I thought it would be a
         fun challenge and learning experience to create my portfolio site using
         React. So far I've implemented custom icons using SVGs as stateless
-        components. I've created a higher order component that blurs the out of
-        viewport components that uses React Observation Observer and the
-        Semantic UI Dimmer property. Much more to come soon!
+        components. Much more to come soon!
       </p>
       <Button
         icon
