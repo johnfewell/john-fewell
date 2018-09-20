@@ -64,7 +64,7 @@ class DesktopContainer extends Component {
                   <Menu.Item
                     name="list alternate outline"
                     as="a"
-                    href="https://y9u.org/"
+                    href="https://medium.com/@fewell/"
                   >
                     <Icon name="list alternate outline" />
                     Blog
