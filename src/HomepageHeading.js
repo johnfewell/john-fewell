@@ -25,7 +25,7 @@ const HomepageHeading = ({ mobile }) => (
         marginBottom: 0
       }}
     >
-      I build beautiful and responsive{" "}
+      I build beautiful and performant{" "}
       <span className="replace-text">web applications.</span>
     </Header>
     <div className="ui bounce large monitor">
