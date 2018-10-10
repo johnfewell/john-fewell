@@ -56,7 +56,7 @@ const Projects = () => (
 
         <Card.Content
           as="a"
-          href={"https://github.com/johnfewell/ce-evals-app"}
+          href={"https://github.com/johnfewell/ce-evaluations"}
         >
           <Header as="h2" style={{ marginTop: "80px", color: "#013FDE" }}>
             This app allows for the creation and management of continuing
