@@ -19,16 +19,17 @@ const Projects = () => (
         style={{ height: "410px", background: "#FEBBB2" }}
         className="ui raised link card"
       >
-        <div className="ui fluid image">
-          <div className="ui huge ribbon label">
-            <Icon name="code" />
-            Fancy React Forms
+        <a href="https://github.com/johnfewell/fancy-react-forms/">
+          <div className="ui fluid image">
+            <div className="ui huge ribbon label">
+              <Icon name="code" />
+              Fancy React Forms
+            </div>
           </div>
-        </div>
+        </a>
         <Card.Content
           as="a"
           href={"https://github.com/johnfewell/fancy-react-forms/"}
-          data-content="Add users to your feed"
         >
           <Header as="h2" style={{ marginTop: "80px", color: "#01444D" }}>
             This app allows for the creation of forms and the ability to respond
@@ -47,13 +48,14 @@ const Projects = () => (
         style={{ height: "410", background: "#FEC021" }}
         className="ui raised link card"
       >
-        <div className="ui fluid image">
-          <div className="ui huge ribbon label">
-            <Icon name="code" />
-            CE Evaluations
+        <a href="https://github.com/johnfewell/ce-evaluations">
+          <div className="ui fluid image">
+            <div className="ui huge ribbon label">
+              <Icon name="code" />
+              CE Evaluations
+            </div>
           </div>
-        </div>
-
+        </a>
         <Card.Content
           as="a"
           href={"https://github.com/johnfewell/ce-evaluations"}
@@ -74,12 +76,14 @@ const Projects = () => (
         style={{ height: "410px", background: "#B2CDDE" }}
         className="ui raised link card"
       >
-        <div className="ui fluid image">
-          <div className="ui huge ribbon label">
-            <Icon name="code" />
-            School Registration
+        <a href="https://github.com/johnfewell/sinatra-portfolio-school-registration">
+          <div className="ui fluid image">
+            <div className="ui huge ribbon label">
+              <Icon name="code" />
+              School Registration
+            </div>
           </div>
-        </div>
+        </a>
         <Card.Content
           as="a"
           href={
